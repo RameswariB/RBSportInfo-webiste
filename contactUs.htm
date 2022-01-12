@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Rameswari Bhoi,
+Desc: This is a login page.
+Validated : page validated by https://validator.w3.org/check
+error: required attribute "type" not specified in Line 9
+Dtae: 4/7/2021
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en">
+<head>
+   <title>Title goes here</title>
+   <link rel="stylesheet" href="./css/styles_pages.css"/>
+   <script language="text/javascript" src="./js/login.js"></script>
+   <script type="text/javascript">
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</head>
+
+<body class="body" style="background-image:url('./imgs/player.jpg');background-position: center;
+  background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+  <br/><br/><br/><br/>
+  <div style="background-color:white;margin-left:10%;width:80%;">
+		
+			<table>
+				<tr>
+					<td>
+						<div>
+						  <form> 
+							 <div class="register-top-grid" style="margin-left:20px;margin-right:5px">
+								<h3>SEND US MESSAGE</h3>
+								<div class="mation">
+									<label>Name</label>
+									  <input type="text" id="name" name="name">
+									  <label>Email Address</label>
+									  <input type="text" id="address" name="address">
+									  <label>Subject</label>
+									  <input type="text" id="subject" name="subject">
+									  <label>Message</label>
+									  <textarea id="message" name="message" rows="6" cols="66"></textarea>
+								</div>
+								<!---300x250--->
+								 <div class="clearfix"> </div><br/>
+								   <input type="button" value="Send">
+								 </div>
+								
+							</form>
+							
+						</div>
+						</td>
+						<td style="float: right;margin-left:180px;" >
+							 <div class="register-top-grid" style="float:right">
+							<h4>Get in touch</h4>
+							<div style="height:200%">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909492!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2sin!4v1415776049771"></iframe>
+							</div>
+						</td>
+					</tr>
+				</table>
+		<br/><br/>
+	</div><br/><br/><br/><br/>
+  <div class="footer">
+  <p>Copyright @ 2021 Rameswari Bhoi - Lasalle College</p>
+</div>
+</body>
+
+</html>

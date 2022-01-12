@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Rameswari Bhoi,
+ validated : https://validator.w3.org/#validate_by_upload
+ line 30 and 33 error can not be resolved.(character "<" is the first character of a delimiter but occurred as data)
+ desc:This is a content main page which is diplay the index page.
+ date:1/7/2021-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en">
+<head>
+   <title>Title goes here</title>
+   <link rel="stylesheet" href="./css/styles_content.css"/>
+   <script type="text/javaScript">
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+	</head>
+
+<body>
+	  
+	<div class="slideshow-container">
+
+		<div class="mySlides fade" id="slide1" >
+		  <div class="numbertext">1 / 4</div>
+		  <img src="./imgs/cricket1.jpg" alt="cricket1" style="width:100%"/>
+		  
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="./imgs/cricket2.jpg" alt="cricket2" style="width:100%"/>
+		  
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 4</div>
+		  <img src="./imgs/cricket3.jpg" alt="cricket3" style="width:100%"/>
+		  
+		</div>
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="./imgs/cricket4.jpg" alt="cricket4" style="width:100%"/>
+		  
+		</div>
+		
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+		<br/>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+		
+		<div>
+		<p>
+		The 21st century has seen some of the most rapid changes in the history of the game, with arguably none bigger than the creation of a new format of the sport, the shortest version that is the three-hour spectacle of Twenty20 cricket.
+		The advent of Twenty20 cricket, played first in county cricket in England in 2003, has led to great innovation in the game. To counter free-scoring batsmen with big hitters and strokes played through all 360 degrees, bowlers began to perfect a great variety of different deliveries and there has been a sharp increase in the quality of fielding. In 2004, the first Women’s Twenty20 International was played and the following year saw the first Men’s Twenty20 International with the format being adopted as the third official format of the sport.
+		</p>
+		</div>
+		
+	<footer class="footer">
+		<p>Copyright @ 2021 Rameswari Bhoi - Lasalle College</p>
+		<div class="w3-container">
+			 <a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.linkedin.com/company/w3schools.com/" title="W3Schools on LinkedIn"><i class="fa"></i></a>
+			  <a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.instagram.com/w3schools.com_official/" title="W3Schools on Instagram"><i class="fa"></i></a>
+			  <a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.facebook.com/w3schoolscom/" title="W3Schools on Facebook"><i class="fa"></i></a>
+			 </div>
+	</footer>
+	
+</body>
+
+</html>

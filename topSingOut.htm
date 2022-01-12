@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en">
+<head>
+   <title>Title goes here</title>
+   <script language="javascript" src="./js/login.js"></script>
+   <link rel="stylesheet" href="./css/styles.css"/>
+   <script>
+	function display_c(){
+	var refresh=1000; // Refresh rate in milli seconds
+	mytime=setTimeout('display_ct()',refresh)
+	}
+
+	function display_ct() {
+	var x = new Date()
+	document.getElementById('ct').innerHTML = x;
+	display_c();
+ }
+   
+   </script>
+</head>
+
+<body onload="display_ct()">
+<table>
+	<tr>
+		<td width="50%">
+
+			<div align="left" style="padding-top:35px;">
+				<img src="./imgs/logo_2.png" alt="logo img" height="20%" width="20%"/>
+			</div>
+		<td>
+		<td width="80%">
+			<div align="right">
+			  <table cellpadding="5" cellspacing="5" width="412">
+				<tbody>
+				  <tr>
+					<td valign="top" width="450">
+						  <form name="login_form">
+						  <table width="450">
+							<tbody>
+							  <tr>
+								<td width="50" style="font-size:14px;"><b>WelCome Rameswari Bhoi,</b></td>
+								<td width="50" style="font-size:14px;"><b><a value="logOut" style="padding-left:-10px;" name="authenticate" onclick="logOut()">Sign Out</a></b></td>
+							  </tr>
+							  <tr>
+								<td colspan="2">
+								<br/>
+									<label id="ct" style="font-size:14px; bold;color:white;"></label>
+								</td>
+							  </tr>
+							</tbody>
+						  </table>
+						 </form>
+					</td>
+				  </tr>
+				</tbody>
+			  </table>
+			</div>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

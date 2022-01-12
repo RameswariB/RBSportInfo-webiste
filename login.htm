@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en">
+<head>
+   <title>Title goes here</title>
+   <link rel="stylesheet" href="./css/styles_pages.css"/>
+   <script language="javascript" src="./js/login.js"></script>
+   <script type="text/javascript">
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</head>
+
+<body class="body" style="background-image:url('./imgs/player.jpg');background-position: center;
+  background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+  </br></br></br></br>
+  <div style="background-color:white;margin-left:20%;width:60%;padding-left:10%">
+		
+			<div class="register-top-grid">
+			</br></br>
+			<h3>Sign In</h3>
+				<form name="login_form">
+				  <label for="Username">User Name:</label>
+				  <input type="text" maxlength="50" name="username" size="50">
+				  <label for="lname">Password:</label>
+				  <input maxlength="10" name="password" size="20" type="password">
+				  
+				  <input type="button" value="login" name="authenticate" onclick="login()">
+				</form>
+			</div>
+		</br></br>
+	</div></br></br></br></br>
+  <div class="footer">
+  <p>Copyright @ 2021 Rameswari Bhoi - Lasalle College</p>
+</div>
+</body>
+
+</html>
